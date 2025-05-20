@@ -1,0 +1,89 @@
+from pydantic import BaseModel, Field
+from typing import Optional, List
+from datetime import date
+
+class FinancialMetrics(BaseModel):
+    mrr: Optional[float] = Field(None, description = "Monthly Recurring Revenue in USD")
+    arr: Optional[float] = Field(None, description = "Annual Recurring Revenue in USD")
+    revenue: Optional[float] = Field(None, description="Monthly revenue (not derived from MRR)")
+    burn_rate: Optional[float] = Field(None, description="Monthly net burn in USD")
+    cash_on_hand: Optional[float] = Field(None, description="Cash on Hand in USD")
+    runway: Optional[int] = Field(None, description="Runway in Months")
+    gross_margin: Optional[float] = Field(None, description="Gross Margin (%)")
+    #cogs: Optional[float] = Field(None, description="Cost Of Goods Sold in USD") --> would this be required? currently only 1 of the 16 company's have provided this data
+
+        @property
+    def projected_arr(self) -> Optional[float]:
+        return self.mrr * 12 if self.mrr is not None else None
+
+    def arr_gap(self) -> Optional[float]:
+        if self.arr is not None and self.projected_arr is not None:
+            return self.arr - self.projected_arr
+        return None
+
+    def burn_multiple(self) -> Optional[float]:
+        if self.burn_rate is not None and self.revenue and self.revenue != 0:
+            return self.burn_rate / self.revenue
+        return None
+
+    def meets_arr_projection(self) -> Optional[bool]:
+        if self.arr is not None and self.projected_arr is not None:
+            return abs(self.arr - self.projected_arr) / self.projected_arr <= 0.1
+        return None
+    
+class CustomerMetrics(BaseModel):
+    active_customers: Optional[int] = Field(None, description="Number of Active Customers")
+    churn_rate: Optional[float] = Field(None, description="Churn Rate (%)")
+    new_customers: Optional[int] = Field(None, description="Number of New Customers")
+    usage_stats: Optional[str] = Field(None, description="Usage Notes and Statistics – Product Feedback")
+    #customer_segmentation: Optional[str] --> i think can just leave out.
+
+class SalesMetrics(BaseModel):
+    MoM_revenue_growth: Optional[float] = Field(None, description="MoM Revenue Growth in USD")
+    YoY_revenue_growth: Optional[float] = Field(None, description="YoY Revenue Growth in USD")
+    backlog_revenue: Optional[float] = Field(None, description="Backlog Revenue in USD")
+    target_revenue: Optional[float] = Field(None, description="Targeted Revenue Goal in USD")
+    #Signed vs. Potential Deals = Contract status with new customers.
+    #signed_deals: Optional[int] #purpose??
+    #potential_deals: Optional[int] #purpose??
+
+class TeamAndOpsMetrics(BaseModel):
+    team_size: Optional[int] = Field(None, description="Current Team Size")
+    new_hires: Optional[List[str]] = Field(None, description="New Roles Hired")
+    required_hires: Optional[List[str]] = Field(None, description="Required Roles to Hire")
+    operation_notes: Optional[str] = Field(None, description="Office/Operations Optimization Notes")#e.g. cost cutting measures, support outsourcing
+
+class ProductMilestone(BaseModel):
+    description: str = Field(..., description="Major Product/Feature Rollouts")
+    #date: Optional[date] = Field(None, )
+    integration: Optional[List[str]] = None  # e.g., 'Launch', 'Upgrade', 'Integration'
+    impact: Optional[str] = None
+
+class FundraisingRound(BaseModel):
+    round_type: Optional[str] = Field(None, description="Round Type")
+    amount_raised: Optional[float] = Field(None, description="Amount Raised in USD")
+    amount_remaining: Optional[float] = Field(None, description="Remaining Amount to Raise in USD")
+    strategic_investors: Optional[List[str]] = Field(None, description="List of Successful Strategic Investors")
+    advisors: Optional[List[str]] = Field(None, description="List of Effective Advisors")
+
+class CompanyEvent(BaseModel):
+    year: int
+    quarter: int
+    event_type: str
+    description: str
+
+class CompanySnapshot(BaseModel):
+    company_name: str = Field(description="Company Name")
+    year: int = Field(description="Year")
+    quarter: int = Field(description="Fiscal Quarter")
+    industry: Optional[str] = Field(description="Company Industry")
+    region: Optional[str] = Field(description="Company's Operational Region")
+    financials: Optional[FinancialMetrics] = Field(description="Company's Financial Data")
+    customers: Optional[CustomerMetrics] = Field(description="Company's Customer Data")
+    sales: Optional[SalesMetrics] = Field(description="Company's Sales Growth Data")
+    team: Optional[TeamAndOpsMetrics] = Field(description="Company's Office and Operation Data")
+    fundraising: Optional[List[FundraisingRound]] = Field(description="Company's Fundraising Data")
+    product_updates: Optional[List[ProductMilestone]] = Field(description="Company's Product Milestone Data")
+    events: Optional[List[CompanyEvent]] = Field(description="Timeline of Major Company Events")
+    notes: Optional[str] = Field(description="Additional Notes")
+    source: Optional[str] = None
