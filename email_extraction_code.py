@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from typing import Optional, List
+from typing import Optional, List, Literal
 from datetime import date
 
 class FinancialMetrics(BaseModel):
@@ -8,11 +8,11 @@ class FinancialMetrics(BaseModel):
     revenue: Optional[float] = Field(None, description="Monthly revenue (not derived from MRR)")
     burn_rate: Optional[float] = Field(None, description="Monthly net burn in USD")
     cash_on_hand: Optional[float] = Field(None, description="Cash on Hand in USD")
-    runway: Optional[int] = Field(None, description="Runway in Months")
+    runway: Optional[float] = Field(None, description="Runway in Months")
     gross_margin: Optional[float] = Field(None, description="Gross Margin (%)")
     #cogs: Optional[float] = Field(None, description="Cost Of Goods Sold in USD") --> would this be required? currently only 1 of the 16 company's have provided this data
 
-        @property
+    @property
     def projected_arr(self) -> Optional[float]:
         return self.mrr * 12 if self.mrr is not None else None
 
@@ -55,9 +55,9 @@ class TeamAndOpsMetrics(BaseModel):
 
 class ProductMilestone(BaseModel):
     description: str = Field(..., description="Major Product/Feature Rollouts")
-    #date: Optional[date] = Field(None, )
-    integration: Optional[List[str]] = None  # e.g., 'Launch', 'Upgrade', 'Integration'
-    impact: Optional[str] = None
+    event_type: Optional[Literal["Launch", "Upgrade", "Integration", "Partnership", "Churn", "Hiring"]] = Field(None)
+    integration: Optional[List[str]] = Field(None, description="List of integrations")  # e.g., 'Launch', 'Upgrade', 'Integration'
+    impact: Optional[str] = Field(None, description="Qualitative impact summary")
 
 class FundraisingRound(BaseModel):
     round_type: Optional[str] = Field(None, description="Round Type")
@@ -76,14 +76,14 @@ class CompanySnapshot(BaseModel):
     company_name: str = Field(description="Company Name")
     year: int = Field(description="Year")
     quarter: int = Field(description="Fiscal Quarter")
-    industry: Optional[str] = Field(description="Company Industry")
-    region: Optional[str] = Field(description="Company's Operational Region")
-    financials: Optional[FinancialMetrics] = Field(description="Company's Financial Data")
-    customers: Optional[CustomerMetrics] = Field(description="Company's Customer Data")
-    sales: Optional[SalesMetrics] = Field(description="Company's Sales Growth Data")
-    team: Optional[TeamAndOpsMetrics] = Field(description="Company's Office and Operation Data")
-    fundraising: Optional[List[FundraisingRound]] = Field(description="Company's Fundraising Data")
-    product_updates: Optional[List[ProductMilestone]] = Field(description="Company's Product Milestone Data")
-    events: Optional[List[CompanyEvent]] = Field(description="Timeline of Major Company Events")
-    notes: Optional[str] = Field(description="Additional Notes")
-    source: Optional[str] = None
+    industry: Optional[str] = Field(None, description="Company Industry")
+    region: Optional[str] = Field(None, description="Company's Operational Region")
+    financials: Optional[FinancialMetrics] = Field(None, description="Company's Financial Data")
+    customers: Optional[CustomerMetrics] = Field(None, description="Company's Customer Data")
+    sales: Optional[SalesMetrics] = Field(None, description="Company's Sales Growth Data")
+    team: Optional[TeamAndOpsMetrics] = Field(None, description="Company's Office and Operation Data")
+    fundraising: Optional[List[FundraisingRound]] = Field(None, description="Company's Fundraising Data")
+    product_updates: Optional[List[ProductMilestone]] = Field(None, description="Company's Product Milestone Data")
+    events: Optional[List[CompanyEvent]] = Field(None, description="Timeline of Major Company Events")
+    notes: Optional[str] = Field(None, description="Additional Notes")
+    source: Optional[str] = Field(None, description= "PDF or Email Source References")

@@ -1,0 +1,78 @@
+{
+  "company_name": "Toothy",
+  "year": 2025,
+  "quarter": 1,
+  "industry": "Healthtech (Dental)",
+  "region": "",
+  "financials": {
+    "mrr": 39400,
+    "arr": 472346,
+    "revenue": null,
+    "burn_rate": null,
+    "cash_on_hand": null,
+    "runway": null,
+    "gross_margin": null
+  },
+  "customers": {
+    "active_customers": 15,
+    "churn_rate": null, //churned 6 clinics
+    "new_customers": null,
+    "usage_stats": null
+  },
+  "sales": {
+    "mom_revenue_growth": null,
+    "yoy_revenue_growth": null,
+    "backlog_revenue": null,
+    "target_revenue": 2800000
+  },
+  "team": {
+    "team_size": null,
+    "new_hires": [
+      "Jeff Williams (VP of Sales)",
+      "Cori-Anne Farvo (Customer Success Manager)"
+    ],
+    "required_hires": [
+      "3–4 senior engineers"
+    ],
+    "operation_notes": "Built a strong onboarding, implementation, and customer success motion to support rapid clinic launches. Made key engineering hires and are shipping faster. Laid foundational systems for scale (rev ops, product instrumentation)."
+  },
+  "fundraising": [
+    {
+      "round_type": "Seed",
+      "amount_raised": 4200000,
+      "amount_remaining": null,
+      "strategic_investors": null,
+      "advisors": null
+    }
+  ],
+  "product_updates": [
+    {
+      "description": "Built a strong onboarding, implementation, and customer success motion to support rapid clinic launches",
+      "event_type": "Upgrade",
+      "integrations": null,
+      "impact": "Supports rapid clinic launches and scale"
+    },
+    {
+      "description": "Laid foundational systems to support scale, including rev ops and product instrumentation",
+      "event_type": "Upgrade",
+      "integrations": null,
+      "impact": "Infrastructure for scaling"
+    }
+  ],
+  "events": [
+    {
+      "year": 2025,
+      "quarter": 1,
+      "event_type": "Fundraising",
+      "description": "$4.2M seed round closed"
+    },
+    {
+      "year": 2025,
+      "quarter": 1,
+      "event_type": "Accelerator (Y Combinator)",
+      "description": "Completed Y Combinator, closed $550K ARR across 21 clinics in 9 weeks"
+    }
+  ],
+  "notes": "21 clinics sold for $550K ARR, 6 churned worth $77,654 ARR (churn due to poor fit). Targeting $2.8MM ARR and adding $600K of new ARR/month. Seeking healthtech software advisors. Company focuses on dental, building vertical AI for 'medical-lite' practices, with goal of automating practices to be run with zero support staff.",
+  "source": "April 2025 PDF Update"
+}

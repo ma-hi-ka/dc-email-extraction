@@ -1,0 +1,58 @@
+{
+  "company_name": "Iliad",
+  "year": 2023,
+  "quarter": 4,
+  "industry": null,
+  "region": null,
+  "financials": {
+    "mrr": 544.0,
+    "arr": null,
+    "revenue": 544.0,
+    "burn_rate": 3000.0,
+    "cash_on_hand": 1360000.0,
+    "runway": null,
+    "gross_margin": null
+  },
+  "customers": {
+    "active_customers": null,
+    "churn_rate": null,
+    "new_customers": null,
+    "usage_stats": "Image workspace: 39 unique users (down 7%). Voxel art generator: 14 unique users (down 30%). Total images generated: 1080 (down 35%). Total voxel models generated: 150 (up 224%). Generation time: 7.5 (up 42%). Generation time top 10 users: 6.5 (up 91%)."
+  },
+  "sales": {
+    "mom_revenue_growth": 0.17,
+    "yoy_revenue_growth": null,
+    "backlog_revenue": null,
+    "target_revenue": null
+  },
+  "team": {
+    "team_size": null,
+    "new_hires": null,
+    "required_hires": ["Engineer"],
+    "operation_notes": "Continuing process for hiring first engineers."
+  },
+  "fundraising": [],
+  "product_updates": [
+    {
+      "description": "Upgraded image workspace to be ~3x faster with same quality.",
+      "event_type": "Upgrade",
+      "integrations": null,
+      "impact": "Significantly improved processing speed."
+    },
+    {
+      "description": "Complete 3D model generator upgrade reducing polygon count to ~20% of prior level.",
+      "event_type": "Upgrade",
+      "integrations": null,
+      "impact": "Resolved most common 3D user complaint."
+    },
+    {
+      "description": "Experimented with $12 plan for 4 hours of generation time, 2.5x more popular than $30 plan.",
+      "event_type": "Churn",
+      "integrations": null,
+      "impact": "Lower-priced plan more attractive for new users."
+    }
+  ],
+  "events": [],
+  "notes": "Image workspace usage decreased while 3D usage increased. Revenue up 17% MoM. Image workspace remains confusing for new users; design improvable. January goal: make image workspace real-time for better user experience.",
+  "source": "Investor Update, December 2023"
+}

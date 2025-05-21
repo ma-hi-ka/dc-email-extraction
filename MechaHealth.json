@@ -1,0 +1,48 @@
+[
+  {
+    "company_name": "Mecha Health",
+    "year": 2025,
+    "quarter": 2,
+    "industry": "Radiology AI / Medical Imaging",
+    "region": null,
+    "financials": {
+      "mrr": null,
+      "arr": 150000,
+      "revenue": null,
+      "burn_rate": 24000,
+      "cash_on_hand": null,
+      "runway": 60,
+      "gross_margin": null
+    },
+    "customers": {
+      "active_customers": null,
+      "churn_rate": null,
+      "new_customers": 1,
+      "usage_stats": null
+    },
+    "sales": {
+      "mom_revenue_growth": null,
+      "yoy_revenue_growth": null,
+      "backlog_revenue": null,
+      "target_revenue": 1000000
+    },
+    "team": {
+      "team_size": null,
+      "new_hires": null,
+      "required_hires": null,
+      "operation_notes": "No immediate hiring planned; headcount scaling deferred until milestones reached."
+    },
+    "fundraising": [],
+    "product_updates": [
+      {
+        "description": "Latest CXR model outperformed a 13-year veteran radiologist in 50% of cases and detected a missed life-threatening pneumothorax.",
+        "event_type": "Upgrade",
+        "integrations": null,
+        "impact": "Strongest signal yet for approaching human-level performance in chest x-rays."
+      }
+    ],
+    "events": [],
+    "notes": "Signed first customer (Hexarad). Close to signing Amerirad, Skyrad, Radiology of Huntsville, Radiology Associates of North Texas, and DocPanel. Compute covered for 10 months via credits. Potential PACS provider partnership may accelerate progress.",
+    "source": "May 2025 Investor Update Email"
+  }
+]

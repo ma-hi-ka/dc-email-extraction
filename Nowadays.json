@@ -1,0 +1,71 @@
+{
+  "company_name": "Nowadays",
+  "year": 2025,
+  "quarter": 1,
+  "industry": null,
+  "region": null,
+  "financials": {
+    "mrr": null,
+    "arr": null,
+    "revenue": 44700.0,
+    "burn_rate": 12900.0,
+    "cash_on_hand": 1960000.0,
+    "runway": 80,
+    "gross_margin": null
+  },
+  "customers": {
+    "active_customers": null,
+    "churn_rate": null,
+    "new_customers": null,
+    "usage_stats": "Inbound and Referrals are strongest acquisition channels; scaled outbound sales with 5 new domains and tools like Fiber AI and Instantly."
+  },
+  "sales": {
+    "mom_revenue_growth": null,
+    "yoy_revenue_growth": null,
+    "backlog_revenue": null,
+    "target_revenue": 50000.0
+  },
+  "team": {
+    "team_size": null,
+    "new_hires": null,
+    "required_hires": ["Founding engineer"],
+    "operation_notes": "Overloaded on Dev and Ops; recruiting trip to Boston and NYC planned for May with confidence of a hire for May or June. Once hiring finishes, more bandwidth expected."
+  },
+  "fundraising": [],
+  "product_updates": [
+    {
+      "description": "Rolled out Northstar integration with multiple fixes, no leads yet; Northstar marketing promotion pending.",
+      "event_type": "Integration",
+      "integrations": ["Northstar"],
+      "impact": "No leads so far; Northstar to promote more in coming weeks."
+    },
+    {
+      "description": "Drafted $150K proposal for Northstar project to track ROI for sponsors.",
+      "event_type": "Partnership",
+      "integrations": ["Northstar"],
+      "impact": "$150K proposal prepared; potential internal project."
+    },
+    {
+      "description": "Estimated $70K revenue (split $28K customer, $42K commission) for Monte Carlo's 225-person company offsite to Cancun.",
+      "event_type": "Launch",
+      "integrations": null,
+      "impact": "New PR for single event revenue record."
+    },
+    {
+      "description": "Major partnerships progressing with Northstar, AmexGBT, and Blackrock; timelines uncertain due to slow movement.",
+      "event_type": "Partnership",
+      "integrations": ["Northstar", "AmexGBT", "Blackrock"],
+      "impact": "Potential revenue and business development in pipeline."
+    }
+  ],
+  "events": [
+    {
+      "year": 2025,
+      "quarter": 2,
+      "event_type": "Hiring",
+      "description": "Recruiting trip planned for Boston and NYC to hire founding engineer."
+    }
+  ],
+  "notes": "Raised minimum event budget to $50K; new tiered pricing model by event size; ongoing quarterly analysis of acquisition and retention; lost annual subscription deal but customer remains interested via bookings, experimenting with annual + discounted sourcing fee pricing; positive customer feedback; overloaded Ops/Dev capacity.",
+  "source": "Mar 2025 update"
+}
