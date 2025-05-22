@@ -1,0 +1,57 @@
+{
+    "company_name": "Fluently: AI English coach",
+    "year": 2025,
+    "quarter": 1,
+    "industry": "EdTech / AI Language Coaching",
+    "region": null,
+    "financials": {
+        "mrr": 13957.0,
+        "arr": null,
+        "revenue": null,
+        "burn_rate": 59000.0,
+        "cash_on_hand": 1830000.0,
+        "runway": 31.0,
+        "gross_margin": null
+    },
+    "customers": {
+        "active_customers": 733,
+        "churn_rate": null,
+        "new_customers": null,
+        "usage_stats": "1st week tutor usage: 15.4 mins avg; WAU: 733; TikTok viral video: 1.8M views, 2k installs; Product Hunt: 155 comments, #1 Day Rank"
+    },
+    "sales": {
+        "mom_revenue_growth": 0.98,
+        "yoy_revenue_growth": null,
+        "backlog_revenue": null,
+        "target_revenue": null
+    },
+    "team": {
+        "team_size": 9,
+        "new_hires": null,
+        "required_hires": ["Full-stack engineer"],
+        "operation_notes": null
+    },
+    "fundraising": [],
+    "product_updates": [
+        {
+            "description": "Rolled out redesigned version of the app focusing on speaking with AI-tutor.",
+            "event_type": "Upgrade",
+            "integrations": null,
+            "impact": "Improved user speaking experience."
+        },
+        {
+            "description": "Relaunched TikTok content factory; weekly views ramped from 73k up to 1.8M.",
+            "event_type": "Launch",
+            "integrations": ["TikTok"],
+            "impact": "Drove viral growth and installs."
+        }
+    ],
+    "events": [
+        {
+            "event_type": "Product Hunt Launch",
+            "description": "Took 1st product of the day on Product Hunt (#1 Day Rank, #3 Week Rank, 1132 points)."
+        }
+    ],
+    "notes": "Burn rate increased with 4 new hires (team of 9 in March). Ongoing growth in TikTok reach and installs.",
+    "source": "Feb & Mar 2025 Investor Updates"
+}
