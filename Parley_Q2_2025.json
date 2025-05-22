@@ -1,0 +1,54 @@
+{
+    "company_name": "Parley",
+    "year": 2025,
+    "quarter": 2,
+    "industry": "Legal Tech / Immigration",
+    "region": null,
+    "financials": {
+      "mrr": 33100.0,
+      "arr": null,
+      "revenue": 33100.0,
+      "burn_rate": null,
+      "cash_on_hand": null,
+      "runway": null,
+      "gross_margin": null
+    },
+    "customers": {
+      "active_customers": null,
+      "churn_rate": null,
+      "new_customers": 5,
+      "usage_stats": "111 applications created in March 2025 (up 17% MoM). Expanded workflow usage. Growth in applications attributable to increased usage from firms like Erickson and new signings, but with variable engagement post-signing. Key customer monthly spend is volatile ($7K in February down to $2K in March)."
+    },
+    "sales": {
+      "mom_revenue_growth": -0.01,
+      "yoy_revenue_growth": null,
+      "backlog_revenue": null,
+      "target_revenue": null
+    },
+    "team": {
+      "team_size": null,
+      "new_hires": null,
+      "required_hires": null,
+      "operation_notes": "Planning to solve onboarding/retention issues by improving support documentation, on-site visits to client offices, and incentivized onboarding."
+    },
+    "fundraising": [],
+    "product_updates": [
+      {
+        "description": "Launched E-2 Visa product; now cover all typical corporate immigration drafting.",
+        "event_type": "Launch",
+        "integrations": null,
+        "impact": "Product breadth now supports any firm for all common business immigration needs; can capture markets currently handled by legacy players."
+      }
+    ],
+    "events": [
+      {
+        "year": 2025,
+        "quarter": 2,
+        "event_type": "Product Launch",
+        "description": "Launched E-2 Visa on the platform, announced on LinkedIn."
+      }
+    ],
+    "notes": "Slight revenue decline MoM due to high-variance anchor customer usage. Five new firms signed, though some firms slow to adopt product after signing. Growing organically as customers ask for broader support (e.g. document collection, evidence assessment). Firm visit to DC planned for onboarding push.",
+    "source": "April Investor Update (4/1/25)"
+  }
+  

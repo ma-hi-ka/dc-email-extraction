@@ -1,0 +1,65 @@
+{
+    "company_name": "Forge Automation",
+    "year": 2025,
+    "quarter": 2,
+    "industry": null,
+    "region": null,
+    "financials": {
+        "mrr": null,
+        "arr": null,
+        "revenue": 96282.0,
+        "burn_rate": -51139.0,
+        "cash_on_hand": 2431664.0,
+        "runway": 47,
+        "gross_margin": 56.46
+    },
+    "customers": {
+        "active_customers": null,
+        "churn_rate": null,
+        "new_customers": null,
+        "usage_stats": "Apple orders increased from $8,105 in March to $27,671 in April; Google placed $14,421 in POs."
+    },
+    "sales": {
+        "mom_revenue_growth": 86.23,
+        "yoy_revenue_growth": null,
+        "backlog_revenue": 53392.0,
+        "target_revenue": 120000.0
+    },
+    "team": {
+        "team_size": null,
+        "new_hires": null,
+        "required_hires": null,
+        "operation_notes": "Service was turned off for 4 days due to lack of capacity. High scrap rate impacted gross margin."
+    },
+    "fundraising": [
+        {
+            "round_type": "Seed",
+            "amount_raised": 2575000.0,
+            "amount_remaining": 350000.0,
+            "strategic_investors": null,
+            "advisors": null
+        }
+    ],
+    "product_updates": [
+        {
+            "description": "Apple started piloting the reserved machine product and developed procurement automation integrations.",
+            "event_type": "Partnership",
+            "integrations": ["Apple procurement automation"],
+            "impact": "Potential $120K annual contract per machine if pilot succeeds."
+        },
+        {
+            "description": "Became an official Google parts supplier; Google placed $14,421 in POs so far.",
+            "event_type": "Partnership",
+            "integrations": null,
+            "impact": "Potential pilot of reserved machine product with Google."
+        }
+    ],
+    "events": [
+        {
+            "event_type": "Service Outage",
+            "description": "Service was turned off for 4 days due to capacity limitations."
+        }
+    ],
+    "notes": "Scrap rate was high this month, impacting gross margin. Bottleneck issues identified in product workflow. Company is seeking intros to Meta Reality Labs.",
+    "source": "April 2025 PDF Update"
+}

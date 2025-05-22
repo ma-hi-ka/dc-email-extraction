@@ -1,0 +1,45 @@
+{
+    "company_name": "Marr Labs",
+    "year": 2025,
+    "quarter": 1,
+    "industry": "Mortgage Tech / SaaS",
+    "region": "United States (serving Rocket Mortgage and SMB mortgage customers)",
+    "financials": {
+      "mrr": null,
+      "arr": null,
+      "revenue": 24008.0,
+      "burn_rate": 215000.0,
+      "cash_on_hand": 2680000.0,
+      "runway": 12.5,
+      "gross_margin": null
+    },
+    "customers": {
+      "active_customers": null,
+      "churn_rate": null,
+      "new_customers": null,
+      "usage_stats": "Q1 2025: 406,260 usage minutes (up from 294,000 in Q4 2024 and 93,000 in Q3 2024). Strong SMB momentum, multiple enterprise pilots (not yet live with Rocket revenue)."
+    },
+    "sales": {
+      "mom_revenue_growth": null,
+      "yoy_revenue_growth": null,
+      "backlog_revenue": null,
+      "target_revenue": null
+    },
+    "team": {
+      "team_size": null,
+      "new_hires": null,
+      "required_hires": null,
+      "operation_notes": null
+    },
+    "fundraising": [],
+    "product_updates": [],
+    "events": [
+      {
+        "event_type": "Partnership",
+        "description": "Rocket Mortgage POC planning started, added to Rocket's Approved Vendor List (AVL)."
+      }
+    ],
+    "notes": "Revenue growth from $6,733 (Q3 '24) to $23,137 (Q4 '24) to $24,008 (Q1 '25). Significant usage increase. Cash position and burn rate imply focused scaling. Working to finalize POC and ramp up revenue with Rocket, seeing sales traction with SMB mortgage firms.",
+    "source": "Investor Update for March 2025"
+  }
+  

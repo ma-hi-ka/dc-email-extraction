@@ -1,0 +1,60 @@
+
+{
+  "company_name": "JustPaid",
+  "year": 2025,
+  "quarter": 2,
+  "industry": "SaaS (Billing/Fintech Automation)",
+  "region": null,
+  "financials": {
+    "mrr": 5382.50,
+    "arr": 64590,
+    "revenue": null,
+    "burn_rate": null,
+    "cash_on_hand": null,
+    "runway": null,
+    "gross_margin": null
+  },
+  "customers": {
+    "active_customers": 13,
+    "churn_rate": null,
+    "new_customers": null,
+    "usage_stats": null
+  },
+  "sales": {
+    "mom_revenue_growth": null,
+    "yoy_revenue_growth": null,
+    "backlog_revenue": null,
+    "target_revenue": null
+  },
+  "team": {
+    "team_size": null,
+    "new_hires": ["Engineer (full-stack)", "Engineer (full-stack)"],
+    "required_hires": null,
+    "operation_notes": "Doing remote paired coding sessions and enhanced bug rotation. Sales team has one dedicated sales person, founders also involved."
+  },
+  "fundraising": [],
+  "product_updates": [
+    {
+      "description": "AI agent development for automating customer workflows and new CRM integration platform launches. Stripe subscription migration supported and numerous UX/UI upgrades.",
+      "event_type": "Upgrade",
+      "integrations": ["Slack", "Teams", "Salesforce", "HubSpot"],
+      "impact": "Platform stability increased, reducing churn. Largest customer is happy."
+    }
+  ],
+  "events": [
+    {
+      "event_type": "Networking",
+      "description": "Hosted networking dinners for potential customers with a sponsor."
+    },
+    {
+      "event_type": "Award",
+      "description": "SOC 2 Type 2 Certification."
+    },
+    {
+      "event_type": "Press",
+      "description": "Mentioned in CFO Tech Outlook, Forbes, Inc, CNET, and other outlets. Won Merit Awards and Turpentine."
+    }
+  ],
+  "notes": "Current focus on partnerships, sales funnel experiments, new marketing initiatives, enhancing engineering hiring. Using AI tools to enhance all employees’ work effectiveness.",
+  "source": "May 2025 Investor Update"
+}

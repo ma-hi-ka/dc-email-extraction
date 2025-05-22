@@ -61,14 +61,10 @@
   ],
   "events": [
     {
-      "year": 2025,
-      "quarter": 1,
       "event_type": "Fundraising",
       "description": "$4.2M seed round closed"
     },
     {
-      "year": 2025,
-      "quarter": 1,
       "event_type": "Accelerator (Y Combinator)",
       "description": "Completed Y Combinator, closed $550K ARR across 21 clinics in 9 weeks"
     }

@@ -1,0 +1,110 @@
+{
+    "company_name": "Cleva",
+    "year": 2025,
+    "quarter": 1,
+    "industry": "Fintech",
+    "region": "Africa (US-based digital banking for African customers; Nigeria focus)",
+    "financials": {
+        "mrr": null,
+        "arr": null,
+        "revenue": 793000.0,
+        "burn_rate": 230000.0,
+        "cash_on_hand": 4800000.0,
+        "runway": null,
+        "gross_margin": null
+    },
+    "customers": {
+        "active_customers": null,
+        "churn_rate": null,
+        "new_customers": null,
+        "usage_stats": "50% drop in transaction volume/revenue in Q1 2025 due to compliance focus and high-risk customer removal. Conducted Upwork training for 4,500 people."
+    },
+    "sales": {
+        "mom_revenue_growth": null,
+        "yoy_revenue_growth": null,
+        "backlog_revenue": null,
+        "target_revenue": null
+    },
+    "team": {
+        "team_size": 34,
+        "new_hires": [
+            "Back-end Engineer",
+            "Mobile Engineer",
+            "Data Engineer",
+            "Software Engineer in Test",
+            "Chief of Staff",
+            "Marketing Analyst",
+            "Senior Fraud Analyst",
+            "Customer Support Representative"
+        ],
+        "required_hires": [
+            "Engineering Lead",
+            "DevOps Engineer",
+            "Backend Engineer",
+            "Front-end Engineer",
+            "Graphics Designer"
+        ],
+        "operation_notes": "Resignation and immediate backfill of Front-end Engineer. Moving support from single to double shift. Company offsite in Lagos with all 30+ employees."
+    },
+    "fundraising": [],
+    "product_updates": [
+        {
+            "description": "Launched most requested feature: funding and converting Naira to USD.",
+            "event_type": "Launch",
+            "integrations": null,
+            "impact": "Enable customers to transfer Naira, convert to USD, save in USD or fund USD card."
+        },
+        {
+            "description": "Revamped website and landing page.",
+            "event_type": "Upgrade",
+            "integrations": null,
+            "impact": "Improved marketing/UX"
+        },
+        {
+            "description": "Improved liveness check for user onboarding.",
+            "event_type": "Upgrade",
+            "integrations": null,
+            "impact": "Ensures improved identity verification regardless of ID."
+        },
+        {
+            "description": "OTA deployment for mobile app fixes.",
+            "event_type": "Upgrade",
+            "integrations": null,
+            "impact": "No more forced app updates for bug fixes."
+        },
+        {
+            "description": "Additional transaction monitoring logic.",
+            "event_type": "Upgrade",
+            "integrations": null,
+            "impact": "Flag high-risk patterns and keywords for USD deposits."
+        },
+        {
+            "description": "Zero ETL: optimized data pipeline.",
+            "event_type": "Upgrade",
+            "integrations": null,
+            "impact": "Improves metrics update frequency and reduces AWS costs."
+        },
+        {
+            "description": "Integrated PostHog to track app user activity.",
+            "event_type": "Integration",
+            "integrations": ["PostHog"],
+            "impact": "Enables analytics on user actions."
+        }
+    ],
+    "events": [
+        {
+            "event_type": "Offsite",
+            "description": "Annual company offsite in Lagos with all 30+ employees."
+        },
+        {
+            "event_type": "Compliance Audit",
+            "description": "Completed and passed annual Data Protection Audit for Nigerian entities. Renewed IMTO license."
+        },
+        {
+            "event_type": "Award Nomination",
+            "description": "Nominated for Best Fintech in Africa at African Golden Awards 2025."
+        }
+    ],
+    "notes": "Q1 focus: compliance and de-risking led to 50% revenue and volume drop (not customer-driven churn). Kicked off partnerships (ALX, 3MTT, Univelcity, Telenvo, Go My Code). Upwork sessions for 4,500 people. Goals for Q2: increase PTO, mid-year bonus program, shift system revamp, launch loyalty program/business accounts, expansion into Ghana, South Africa, and Uganda. Team size at end of Q1: 34. Only 1 resignation, immediately backfilled.",
+    "source": "Q1 2025 Update"
+}

@@ -1,0 +1,63 @@
+{
+  "company_name": "JustPaid",
+  "year": 2024,
+  "quarter": 2,
+  "industry": "SaaS (Billing/Fintech Automation)",
+  "region": null,
+  "financials": {
+    "mrr": 3653,
+    "arr": 43836,
+    "revenue": null,
+    "burn_rate": 69792, 
+    "cash_on_hand": 3389891,
+    "runway": 18,
+    "gross_margin": null
+  },
+  "customers": {
+    "active_customers": 10,
+    "churn_rate": null,
+    "new_customers": null,
+    "usage_stats": null
+  },
+  "sales": {
+    "mom_revenue_growth": null,
+    "yoy_revenue_growth": null,
+    "backlog_revenue": null,
+    "target_revenue": null
+  },
+  "team": {
+    "team_size": null,
+    "new_hires": null,
+    "required_hires": null,
+    "operation_notes": null
+  },
+  "fundraising": [
+    {
+      "round_type": "SAFE",
+      "amount_raised": 500000,
+      "amount_remaining": null,
+      "strategic_investors": ["Strategic investor (name not specified)"],
+      "advisors": null
+    }
+  ],
+  "product_updates": [
+    {
+      "description": "Enhanced AI Agent with new finance insights Q&A capabilities; new integrations with Xero and NetSuite; added dunning process and customizable invoice reminders; launched white-labeled customer portal; now supporting credit card payments.",
+      "event_type": "Upgrade",
+      "integrations": ["Xero", "NetSuite", "Quickbooks"],
+      "impact": "Improved flexibility, convenience, cash flow, and supports more customers."
+    }
+  ],
+  "events": [
+    {
+      "event_type": "Event",
+      "description": "First event hosted: AI Unleashed – Turbocharging Startup Growth, in partnership with Codi and CLA."
+    },
+    {
+      "event_type": "Press",
+      "description": "Anelya Grant featured in AI Business."
+    }
+  ],
+  "notes": "In talks to close a deal with a midsize accounting firm with 5,000+ potential clients. Demoing for account firms and startups to ramp MRR. Kicking off SOC 2 compliance. Developing new engineer hiring process.",
+  "source": "June 2024 Update"
+}

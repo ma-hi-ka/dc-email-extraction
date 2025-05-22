@@ -1,0 +1,63 @@
+{
+    "company_name": "Texel",
+    "year": 2025,
+    "quarter": 1,
+    "industry": null,
+    "region": null,
+    "financials": {
+        "mrr": null,
+        "arr": null,
+        "revenue": 49000,
+        "burn_rate": 38000,
+        "cash_on_hand": 1800000,
+        "runway": null,
+        "gross_margin": null
+    },
+    "customers": {
+        "active_customers": null,
+        "churn_rate": null,
+        "new_customers": null,
+        "usage_stats": null
+    },
+    "sales": {
+        "mom_revenue_growth": 0.13,
+        "yoy_revenue_growth": null,
+        "backlog_revenue": null,
+        "target_revenue": null
+    },
+    "team": {
+        "team_size": null,
+        "new_hires": null,
+        "required_hires": null,
+        "operation_notes": null
+    },
+    "fundraising": [],
+    "product_updates": [
+        {
+            "description": "Integrated Alibaba's WanX 2.1 video generation model into the service.",
+            "event_type": "Integration",
+            "integrations": ["WanX 2.1"],
+            "impact": null
+        },
+        {
+            "description": "Onboarded butterflies.ai as the first tester for the video generation service.",
+            "event_type": "Launch",
+            "integrations": null,
+            "impact": null
+        },
+        {
+            "description": "Launched first version of voice cleanup/podcast AI API.",
+            "event_type": "Launch",
+            "integrations": null,
+            "impact": null
+        }
+    ],
+    "events": [
+        {
+            "event_type": "Sponsorship",
+            "description": "Sponsored the Austin AI Film Festival generating leads and ideas."
+        }
+    ],
+    "notes": "Website progress slow. Focusing on improvements to website and marketing push around video generation and voice cleanup.",
+    "source": "April 2025 Investor Update"
+}
