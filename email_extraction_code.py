@@ -39,8 +39,8 @@ class CustomerMetrics(BaseModel):
     #customer_segmentation: Optional[str] --> i think can just leave out.
 
 class SalesMetrics(BaseModel):
-    MoM_revenue_growth: Optional[float] = Field(None, description="MoM Revenue Growth in USD")
-    YoY_revenue_growth: Optional[float] = Field(None, description="YoY Revenue Growth in USD")
+    mom_revenue_growth: Optional[float] = Field(None, description="MoM Revenue Growth in USD")
+    yoy_revenue_growth: Optional[float] = Field(None, description="YoY Revenue Growth in USD")
     backlog_revenue: Optional[float] = Field(None, description="Backlog Revenue in USD")
     target_revenue: Optional[float] = Field(None, description="Targeted Revenue Goal in USD")
     #Signed vs. Potential Deals = Contract status with new customers.
@@ -78,6 +78,7 @@ class CompanySnapshot(BaseModel):
     quarter: int = Field(description="Fiscal Quarter")
     industry: Optional[str] = Field(None, description="Company Industry")
     region: Optional[str] = Field(None, description="Company's Operational Region")
+    
     financials: Optional[FinancialMetrics] = Field(None, description="Company's Financial Data")
     customers: Optional[CustomerMetrics] = Field(None, description="Company's Customer Data")
     sales: Optional[SalesMetrics] = Field(None, description="Company's Sales Growth Data")
@@ -85,5 +86,6 @@ class CompanySnapshot(BaseModel):
     fundraising: Optional[List[FundraisingRound]] = Field(None, description="Company's Fundraising Data")
     product_updates: Optional[List[ProductMilestone]] = Field(None, description="Company's Product Milestone Data")
     events: Optional[List[CompanyEvent]] = Field(None, description="Timeline of Major Company Events")
+    
     notes: Optional[str] = Field(None, description="Additional Notes")
     source: Optional[str] = Field(None, description= "PDF or Email Source References")
