@@ -44,57 +44,80 @@
             "Front-end Engineer",
             "Graphics Designer"
         ],
-        "operation_notes": "Resignation and immediate backfill of Front-end Engineer. Moving support from single to double shift. Company offsite in Lagos with all 30+ employees."
+        "operation_notes": "Conducted company offsite in Lagos with all team members; had 1 resignation (front-end engineer) in Q1, backfill already hired for Q2."
     },
+    "company_lowlights": [
+        {
+            "description": "Significant drop in transaction volume and revenue (~50%) in Q1.",
+            "impact": "Revenue and active transactions decreased due to removal of high-risk customers during compliance overhaul.",
+            "possible_causes": [
+              "Focus on compliance",
+              "Flushing out high-risk customer accounts"
+            ],
+            "future_changes": "Positioned for healthier, more sustainable growth with stronger compliance."
+          },
+          {
+            "description": "One resignation—a front-end engineer relocated and left the company.",
+            "impact": "Temporary gap in front-end role; backfill in place for Q2.",
+            "possible_causes": [
+              "Relocation to Canada"
+            ],
+            "future_changes": "Backfill already hired and starts in Q2."
+          }
+    ],
     "fundraising": [],
     "product_updates": [
         {
-            "description": "Launched most requested feature: funding and converting Naira to USD.",
+            "description": "Launched ability for customers to transfer Naira into accounts and convert to USD (NGN to USD conversions).",
             "event_type": "Launch",
             "integrations": null,
-            "impact": "Enable customers to transfer Naira, convert to USD, save in USD or fund USD card."
+            "impact": "Met top customer feature request; supports saving/funding USD cards."
         },
         {
-            "description": "Revamped website and landing page.",
+            "description": "Revamped website including improved landing page.",
             "event_type": "Upgrade",
             "integrations": null,
-            "impact": "Improved marketing/UX"
+            "impact": "Improved first impressions and onboarding for prospective customers."
         },
         {
-            "description": "Improved liveness check for user onboarding.",
+            "description": "Built enhanced liveness check flow ensuring all users complete liveness regardless of ID.",
             "event_type": "Upgrade",
             "integrations": null,
-            "impact": "Ensures improved identity verification regardless of ID."
+            "impact": "Strengthened KYC and fraud prevention process."
         },
         {
-            "description": "OTA deployment for mobile app fixes.",
+            "description": "OTA deployment for mobile fixes; enables background bug fixes without requiring app updates.",
             "event_type": "Upgrade",
             "integrations": null,
-            "impact": "No more forced app updates for bug fixes."
+            "impact": "Improved user experience and reduced user complaints about frequent updates."
         },
         {
-            "description": "Additional transaction monitoring logic.",
+            "description": "Added transaction monitoring logic to flag high-risk keywords and suspicious USD deposit patterns.",
             "event_type": "Upgrade",
             "integrations": null,
-            "impact": "Flag high-risk patterns and keywords for USD deposits."
+            "impact": "Enhanced compliance and risk management."
         },
         {
-            "description": "Zero ETL: optimized data pipeline.",
+            "description": "Optimized data pipeline for faster metrics updates and reduced AWS cost (Zero ETL).",
             "event_type": "Upgrade",
             "integrations": null,
-            "impact": "Improves metrics update frequency and reduces AWS costs."
+            "impact": "Improved data-driven reporting and cost efficiency."
         },
         {
-            "description": "Integrated PostHog to track app user activity.",
+            "description": "Integrated PostHog to track user activity in the app.",
             "event_type": "Integration",
             "integrations": ["PostHog"],
-            "impact": "Enables analytics on user actions."
+            "impact": "Enhanced analytics and ability to monitor user engagement/product performance."
         }
     ],
     "events": [
         {
-            "event_type": "Offsite",
-            "description": "Annual company offsite in Lagos with all 30+ employees."
+            "event_type": "Partnership/Collaboration",
+            "description": "Kicked off strategic partnerships with ALX and 3MTT, both organizations training new African tech talent."
+        },
+        {
+            "event_type": "Partnership/Collaboration",
+            "description": "Partnered with Univelcity, Telenvo, and Go My Code."
         },
         {
             "event_type": "Compliance Audit",
@@ -103,6 +126,10 @@
         {
             "event_type": "Award Nomination",
             "description": "Nominated for Best Fintech in Africa at African Golden Awards 2025."
+        },
+        {
+            "event_type": "Company Event",
+            "description": "Held annual company offsite in Lagos, bringing all 30+ employees together."
         }
     ],
     "notes": "Q1 focus: compliance and de-risking led to 50% revenue and volume drop (not customer-driven churn). Kicked off partnerships (ALX, 3MTT, Univelcity, Telenvo, Go My Code). Upwork sessions for 4,500 people. Goals for Q2: increase PTO, mid-year bonus program, shift system revamp, launch loyalty program/business accounts, expansion into Ghana, South Africa, and Uganda. Team size at end of Q1: 34. Only 1 resignation, immediately backfilled.",

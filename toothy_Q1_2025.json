@@ -15,7 +15,7 @@
   },
   "customers": {
     "active_customers": 15,
-    "churn_rate": null, //churned 6 clinics
+    "churn_rate": null,
     "new_customers": null,
     "usage_stats": null
   },
@@ -31,11 +31,20 @@
       "Jeff Williams (VP of Sales)",
       "Cori-Anne Farvo (Customer Success Manager)"
     ],
-    "required_hires": [
-      "3–4 senior engineers"
-    ],
+    "required_hires": ["Senior engineer", "Senior engineer", "Senior engineer", "Senior engineer"],
     "operation_notes": "Built a strong onboarding, implementation, and customer success motion to support rapid clinic launches. Made key engineering hires and are shipping faster. Laid foundational systems for scale (rev ops, product instrumentation)."
   },
+  "companylowlights": [
+    {
+      "description": "Churned 6 clinics post-YC.",
+      "impact": "$77,654 ARR lost.",
+      "possible_causes": [
+        "Practice management systems they couldn’t integrate with",
+        "Pricing didn’t justify support cost"
+      ],
+      "future_changes": null
+    }
+  ],
   "fundraising": [
     {
       "round_type": "Seed",

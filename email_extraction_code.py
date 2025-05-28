@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, computed_field
 from typing import Optional, List, Literal
 from datetime import date
 
@@ -10,22 +10,26 @@ class FinancialMetrics(BaseModel):
     cash_on_hand: Optional[float] = Field(None, description="Cash on Hand in USD")
     runway: Optional[float] = Field(None, description="Runway in Months")
     gross_margin: Optional[float] = Field(None, description="Gross Margin (%)")
-    #cogs: Optional[float] = Field(None, description="Cost Of Goods Sold in USD") --> would this be required? currently only 1 of the 16 company's have provided this data
+    #cogs: Optional[float] = Field(None, description="Cost Of Goods Sold in USD") --> 
+    #   would this be required? currently only 1 of the 16 company's have provided this data
 
-    @property
+    @computed_field
     def projected_arr(self) -> Optional[float]:
         return self.mrr * 12 if self.mrr is not None else None
-
+    
+    @computed_field
     def arr_gap(self) -> Optional[float]:
         if self.arr is not None and self.projected_arr is not None:
             return self.arr - self.projected_arr
         return None
-
+    
+    @computed_field
     def burn_multiple(self) -> Optional[float]:
         if self.burn_rate is not None and self.revenue and self.revenue != 0:
             return self.burn_rate / self.revenue
         return None
 
+    @computed_field
     def meets_arr_projection(self) -> Optional[bool]:
         if self.arr is not None and self.projected_arr is not None:
             return abs(self.arr - self.projected_arr) / self.projected_arr <= 0.1
@@ -35,7 +39,7 @@ class CustomerMetrics(BaseModel):
     active_customers: Optional[int] = Field(None, description="Number of Active Customers")
     churn_rate: Optional[float] = Field(None, description="Churn Rate (%)")
     new_customers: Optional[int] = Field(None, description="Number of New Customers")
-    usage_stats: Optional[str] = Field(None, description="Usage Notes and Statistics – Product Feedback")
+    usage_stats: Optional[str] = Field(None, description="Usage Notes and Statistics–Product Feedback")
     #customer_segmentation: Optional[str] --> i think can just leave out.
 
 class SalesMetrics(BaseModel):
@@ -51,19 +55,32 @@ class TeamAndOpsMetrics(BaseModel):
     team_size: Optional[int] = Field(None, description="Current Team Size")
     new_hires: Optional[List[str]] = Field([], description="New Roles Hired")
     required_hires: Optional[List[str]] = Field([], description="Required Roles to Hire")
-    operation_notes: Optional[str] = Field(None, description="Office/Operations Optimization Notes")#e.g. cost cutting measures, support outsourcing
+    operation_notes: Optional[str] = Field(None, description="Office/Operations Optimization Notes")
+    #e.g. cost cutting measures, support outsourcing
 
 class ProductMilestone(BaseModel):
     description: str = Field(..., description="Major Product/Feature Rollouts")
-    event_type: Optional[Literal["Launch", "Upgrade", "Integration", "Partnership", "Churn", "Hiring"]] = Field(None)
-    integration: Optional[List[str]] = Field([], description="List of integrations")  # e.g., 'Launch', 'Upgrade', 'Integration'
+    event_type: Optional[Literal["Launch", "Upgrade", "Integration", "Partnership", 
+                                 "Churn", "Hiring"]] = Field(None)
+    integration: Optional[List[str]] = Field([], description="List of integrations")  
+    # e.g., 'Launch', 'Upgrade', 'Integration'
     impact: Optional[str] = Field(None, description="Qualitative impact summary")
+
+class CompanyLowLight(BaseModel):
+    description: str = Field(..., description="What went wrong or the challenge faced")
+    impact: str = Field(..., description="Qualitative summary of its impact")
+    possible_causes: Optional[List[str]] = Field([], 
+                                                 description="Potential root causes for this lowlight")
+    future_changes: Optional[str] = Field(None, 
+                                          description="Planned or recommended changes to address it")
+
 
 class FundraisingRound(BaseModel):
     round_type: Optional[str] = Field(None, description="Round Type")
     amount_raised: Optional[float] = Field(None, description="Amount Raised in USD")
     amount_remaining: Optional[float] = Field(None, description="Remaining Amount to Raise in USD")
-    strategic_investors: Optional[List[str]] = Field([], description="List of Successful Strategic Investors")
+    strategic_investors: Optional[List[str]] = Field([], 
+                                                     description="List of Successful Strategic Investors")
     advisors: Optional[List[str]] = Field([], description="List of Effective Advisors")
 
 class CompanyEvent(BaseModel):
@@ -80,10 +97,16 @@ class CompanySnapshot(BaseModel):
     financials: Optional[FinancialMetrics] = Field(None, description="Company's Financial Data")
     customers: Optional[CustomerMetrics] = Field(None, description="Company's Customer Data")
     sales: Optional[SalesMetrics] = Field(None, description="Company's Sales Growth Data")
-    team: Optional[TeamAndOpsMetrics] = Field(None, description="Company's Office and Operation Data")
-    fundraising: Optional[List[FundraisingRound]] = Field([], description="Company's Fundraising Data")
-    product_updates: Optional[List[ProductMilestone]] = Field([], description="Company's Product Milestone Data")
-    events: Optional[List[CompanyEvent]] = Field([], description="Timeline of Major Company Events")
+    team: Optional[TeamAndOpsMetrics] = Field(None, 
+                                              description="Company's Office and Operation Data")
+    fundraising: Optional[List[FundraisingRound]] = Field([], 
+                                                          description="Company's Fundraising Data")
+    product_updates: Optional[List[ProductMilestone]] = Field([], 
+                                                              description="Company's Product Milestone Data")
+    events: Optional[List[CompanyEvent]] = Field([], 
+                                                 description="Timeline of Major Company Events")
     
+    lowlights: Optional[List[CompanyLowLight]] = Field([], description="Challenges, setbacks, and negative events")
+
     notes: Optional[str] = Field(None, description="Additional Notes")
     source: Optional[str] = Field(None, description= "PDF or Email Source References")

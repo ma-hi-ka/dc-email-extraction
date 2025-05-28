@@ -5,9 +5,9 @@
     "industry": null,
     "region": null,
     "financials": {
-        "mrr": null,
+        "mrr": 44700.0,
         "arr": null,
-        "revenue": 44700.0,
+        "revenue": null,
         "burn_rate": 12900.0,
         "cash_on_hand": 1960000.0,
         "runway": 80,
@@ -31,6 +31,20 @@
         "required_hires": ["Founding engineer"],
         "operation_notes": "Overloaded on Dev and Ops; recruiting trip to Boston and NYC planned for May with confidence of a hire for May or June. Once hiring finishes, more bandwidth expected."
     },
+    "company_lowlights": [
+        {
+            "description": "Lost an annual subscription deal because the customer's CFO backed out at the last minute.",
+            "impact": "Lost potential for recurring revenue despite positive product feedback; company experimenting with different pricing structures.",
+            "possible_causes": ["CFO changed mind at last minute"],
+            "future_changes": "Testing lower annual subscription fee with discounted per-event sourcing fee."
+        },
+        {
+            "description": "Dev & Ops bottleneck due to hiring focus.",
+            "impact": "Current operational overload; will ease after hiring is complete.",
+            "possible_causes": ["Limited team size", "High workload", "Active hiring process"],
+            "future_changes": "Expecting more bandwidth once hiring completed."
+        }
+    ],
     "fundraising": [],
     "product_updates": [
         {
@@ -38,27 +52,14 @@
             "event_type": "Integration",
             "integrations": ["Northstar"],
             "impact": "No leads so far; Northstar to promote more in coming weeks."
-        },
-        {
-            "description": "Drafted $150K proposal for Northstar project to track ROI for sponsors.",
-            "event_type": "Partnership",
-            "integrations": ["Northstar"],
-            "impact": "$150K proposal prepared; potential internal project."
-        },
-        {
-            "description": "Estimated $70K revenue (split $28K customer, $42K commission) for Monte Carlo's 225-person company offsite to Cancun.",
-            "event_type": "Launch",
-            "integrations": null,
-            "impact": "New PR for single event revenue record."
-        },
-        {
-            "description": "Major partnerships progressing with Northstar, AmexGBT, and Blackrock; timelines uncertain due to slow movement.",
-            "event_type": "Partnership",
-            "integrations": ["Northstar", "AmexGBT", "Blackrock"],
-            "impact": "Potential revenue and business development in pipeline."
         }
     ],
-    "events": [],
+    "events": [
+        {
+            "event_type": "Revenue Milestone",
+            "description": "Record single event revenue: $70K for Monte Carlo offsite (225 people: $28K from customer, $42K commission)."
+        }
+    ],
     "notes": "Raised minimum event budget to $50K; new tiered pricing model by event size; ongoing quarterly analysis of acquisition and retention; lost annual subscription deal but customer remains interested via bookings, experimenting with annual + discounted sourcing fee pricing; positive customer feedback; overloaded Ops/Dev capacity.",
     "source": "Mar 2025 update"
 }

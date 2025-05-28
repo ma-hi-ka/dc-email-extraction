@@ -20,7 +20,7 @@
         "usage_stats": null
     },
     "sales": {
-        "mom_revenue_growth": 0.13,
+        "mom_revenue_growth": 13,
         "yoy_revenue_growth": null,
         "backlog_revenue": null,
         "target_revenue": null
@@ -31,6 +31,14 @@
         "required_hires": null,
         "operation_notes": null
     },
+    "company_lowlights": [
+        {
+            "description": "Website progress is still slow.",
+            "impact": "Delays in customer-facing improvements and potential lead generation.",
+            "possible_causes": null,
+            "future_changes": null
+        }
+    ],
     "fundraising": [],
     "product_updates": [
         {
@@ -40,24 +48,24 @@
             "impact": null
         },
         {
-            "description": "Onboarded butterflies.ai as the first tester for the video generation service.",
+            "description": "Rolled out a new video generation service (WanX-based) and onboarded butterflies.ai as first tester.",
             "event_type": "Launch",
             "integrations": null,
-            "impact": null
+            "impact": "Expanded offering and initiated customer feedback/testing."
         },
         {
             "description": "Launched first version of voice cleanup/podcast AI API.",
             "event_type": "Launch",
             "integrations": null,
-            "impact": null
+            "impact": "Expanded product suite; entered podcast/voice processing market."
         }
     ],
     "events": [
         {
             "event_type": "Sponsorship",
-            "description": "Sponsored the Austin AI Film Festival generating leads and ideas."
+            "description": "Sponsored the Austin AI Film Festival, generating leads and ideas."
         }
     ],
-    "notes": "Website progress slow. Focusing on improvements to website and marketing push around video generation and voice cleanup.",
+    "notes": "Focusing on improvements to website and marketing push around video generation and voice cleanup.",
     "source": "April 2025 Investor Update"
 }

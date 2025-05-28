@@ -31,6 +31,7 @@
     "required_hires": null,
     "operation_notes": null
   },
+  "companylowlight": [],
   "fundraising": [
     {
       "round_type": "SAFE",
@@ -42,7 +43,7 @@
   ],
   "product_updates": [
     {
-      "description": "Enhanced AI Agent with new finance insights Q&A capabilities; new integrations with Xero and NetSuite; added dunning process and customizable invoice reminders; launched white-labeled customer portal; now supporting credit card payments.",
+      "description": "Enhanced JustPaid Agent with new finance insights Q&A capabilities; new integrations with Xero and NetSuite(in addition to Quickbooks); added dunning process and customizable invoice reminders; launched white-labeled customer portal; now supporting credit card payments.",
       "event_type": "Upgrade",
       "integrations": ["Xero", "NetSuite", "Quickbooks"],
       "impact": "Improved flexibility, convenience, cash flow, and supports more customers."
@@ -50,7 +51,7 @@
   ],
   "events": [
     {
-      "event_type": "Event",
+      "event_type": "Partnership Event",
       "description": "First event hosted: AI Unleashed – Turbocharging Startup Growth, in partnership with Codi and CLA."
     },
     {
@@ -58,6 +59,6 @@
       "description": "Anelya Grant featured in AI Business."
     }
   ],
-  "notes": "In talks to close a deal with a midsize accounting firm with 5,000+ potential clients. Demoing for account firms and startups to ramp MRR. Kicking off SOC 2 compliance. Developing new engineer hiring process.",
+  "notes": "Closing a deal with a midsize accounting firm with 5,000+ potential clients. Demoing for account firms and startups to ramp MRR. Kicking off SOC 2 compliance. Developing new engineer hiring process.",
   "source": "June 2024 Update"
 }

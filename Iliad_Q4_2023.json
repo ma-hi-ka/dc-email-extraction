@@ -2,12 +2,12 @@
     "company_name": "Iliad",
     "year": 2023,
     "quarter": 4,
-    "industry": null,
+    "industry": "3D graphics AI SaaS",
     "region": null,
     "financials": {
         "mrr": 544.0,
         "arr": null,
-        "revenue": 544.0,
+        "revenue": null,
         "burn_rate": 3000.0,
         "cash_on_hand": 1360000.0,
         "runway": null,
@@ -17,10 +17,10 @@
         "active_customers": null,
         "churn_rate": null,
         "new_customers": null,
-        "usage_stats": "Image workspace: 39 unique users (down 7%). Voxel art generator: 14 unique users (down 30%). Total images generated: 1080 (down 35%). Total voxel models generated: 150 (up 224%). Generation time: 7.5 (up 42%). Generation time top 10 users: 6.5 (up 91%)."
+        "usage_stats": "Image workspace: 39 unique users (down from 42, -7%). Voxel art generator: 14 unique users (down from 20, -30%). Total images generated: 1080 (down from 1652, -35%). Total voxel models generated: 150 (up from 67, +224%). Image workspace generation time: 7.5 (up from 5.3, +42%). Generation time top 10 users: 6.5 (up 91%)."
     },
     "sales": {
-        "mom_revenue_growth": 0.17,
+        "mom_revenue_growth": 17,
         "yoy_revenue_growth": null,
         "backlog_revenue": null,
         "target_revenue": null
@@ -29,18 +29,26 @@
         "team_size": null,
         "new_hires": null,
         "required_hires": ["Engineer"],
-        "operation_notes": "Continuing process for hiring first engineers."
+        "operation_notes": null
     },
+    "company_lowlights": [
+        {
+          "description": "Image workspace is confusing to new users; difficult to learn without explanation.",
+          "impact": "Barrier to adoption; lower user engagement.",
+          "possible_causes": ["Non-intuitive UI/UX", "Insufficient onboarding materials"],
+          "future_changes": null
+        }
+      ],
     "fundraising": [],
     "product_updates": [
         {
             "description": "Upgraded image workspace to be ~3x faster with same quality.",
             "event_type": "Upgrade",
             "integrations": null,
-            "impact": "Significantly improved processing speed."
+            "impact": "Significantly improved processing speed of the tool for all users."
         },
         {
-            "description": "Complete 3D model generator upgrade reducing polygon count to ~20% of prior level.",
+            "description": "Complete 3D model generator upgrade, reducing polygon count to ~20% of prior level.",
             "event_type": "Upgrade",
             "integrations": null,
             "impact": "Resolved most common 3D user complaint."
@@ -53,6 +61,6 @@
         }
     ],
     "events": [],
-    "notes": "Image workspace usage decreased while 3D usage increased. Revenue up 17% MoM. Image workspace remains confusing for new users; design improvable. January goal: make image workspace real-time for better user experience.",
+    "notes": "3D usage and model generation increased, while image generation and workspace usage declined. Key usability issue identified with image workspace complexity for new users. Cash position and burn remain strong for small SaaS operation.",
     "source": "Investor Update, December 2023"
 }
