@@ -17,10 +17,10 @@
       "active_customers": null,
       "churn_rate": null,
       "new_customers": 5,
-      "usage_stats": "111 applications created in March 2025 (up 17% MoM). Expanded workflow usage. Growth in applications attributable to increased usage from firms like Erickson and new signings, but with variable engagement post-signing. Key customer monthly spend is volatile ($7K in February down to $2K in March)."
+      "usage_stats": "111 applications created last month (+17% MoM); increased firm-level usage from pilot (Erickson), but with variable engagement post-signing."
     },
     "sales": {
-      "mom_revenue_growth": -0.01,
+      "mom_revenue_growth": -1.0,
       "yoy_revenue_growth": null,
       "backlog_revenue": null,
       "target_revenue": null
@@ -29,15 +29,29 @@
       "team_size": null,
       "new_hires": null,
       "required_hires": null,
-      "operation_notes": "Planning to solve onboarding/retention issues by improving support documentation, on-site visits to client offices, and incentivized onboarding."
+      "operation_notes": "Lost momentum post-signing new firms due to onboarding handoff issues: paralegals, after decision-maker sign-off, often lack enough context/training and do not activate or retain effectively, affecting usage."
     },
+    "company_lowlights":[
+      {
+        "description": "Lost momentum after signing some firms: Signatory decision-makers hand off to paralegals without sufficient onboarding/context, resulting in lack of retention/usage.",
+        "impact": "Low activation and retention for some newly-signed customers.",
+        "possible_causes": ["Onboarding gaps", "Product usability for non-decision-makers"],
+        "future_changes": null
+      },
+      {
+        "description": "Strong dependence on a few anchor customers whose usage patterns are inconsistent. One key customer reduced applications from $7K/month to $2K/month, negatively impacting top-line revenue.",
+        "impact": "Revenue volatility and risk from concentration.",
+        "possible_causes": ["Anchor customer volatility", "Insufficient diversification"],
+        "future_changes": null
+      }
+    ],
     "fundraising": [],
     "product_updates": [
       {
-        "description": "Launched E-2 Visa product; now cover all typical corporate immigration drafting.",
+        "description": "Launched E-2 Visa drafting suite; now covering all typical corporate immigration needs.",
         "event_type": "Launch",
         "integrations": null,
-        "impact": "Product breadth now supports any firm for all common business immigration needs; can capture markets currently handled by legacy players."
+        "impact": "Significantly expands product breadth and marketability."
       }
     ],
     "events": [

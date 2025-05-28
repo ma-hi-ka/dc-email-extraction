@@ -1,0 +1,66 @@
+ {
+    "company_name": "Mineflow",
+    "year": 2024,
+    "quarter": 4,
+    "industry": "Mining SaaS/AI",
+    "region": "Global (serves Coronado US, Tanzania, Chile, Indonesia, etc.)",
+    "financials": {
+      "mrr": 10000.0,
+      "arr": null,
+      "revenue": null,
+      "burn_rate": 14000.0,
+      "cash_on_hand": 1630000.0,
+      "runway": 60,
+      "gross_margin": null
+    },
+    "customers": {
+      "active_customers": null,
+      "churn_rate": null,
+      "new_customers": null,
+      "usage_stats": "Low usage on Buchanan prediction portal (V1)"
+    },
+    "sales": {
+      "mom_revenue_growth": null,
+      "yoy_revenue_growth": null,
+      "backlog_revenue": null,
+      "target_revenue": null
+    },
+    "team": {
+      "team_size": 1,
+      "new_hires": null,
+      "required_hires": ["Engineer"],
+      "operation_notes": "Sole founder/employee limits ability to handle multiple enterprise contracts and expansion"
+    },
+    "company_lowlights": [
+      {
+        "description": "Low usage on Buchanan portal and customer request for predictions in new format",
+        "impact": "Iteration and portal update required; delayed customer engagement",
+        "possible_causes": ["Poor initial fit for customer workflow"],
+        "future_changes": null
+      }
+    ],
+    "fundraising": [],
+    "product_updates": [
+      {
+        "description": "Built V1 of Buchanan Mine UI; released V2 after customer feedback",
+        "event_type": "Upgrade",
+        "integrations": null,
+        "impact": "Rapid product iterations in response to customer requirements"
+      },
+      {
+        "description": "Blind-tested recovery (second time) and tonnage models for Coronado: ~91% and ~80% improvement compared to customer’s previous models",
+        "event_type": "Upgrade",
+        "integrations": null,
+        "impact": "Material performance improvements validated by customer data"
+      },
+      {
+        "description": "Trained and delivered prospecting models and built V1 UI for Mwamba Mining (Tanzania customer)",
+        "event_type": "Launch",
+        "integrations": null,
+        "impact": "New product build for gold, copper, silver, and nickel"
+      }
+    ],
+    "events": [],
+    "notes": "Three new models and product iterations delivered in two months, but no high-usage or loved product yet. Founder-only operation bottlenecks expansion and delivery velocity; growing interest from potential enterprise customers.",
+    "source": "Investor Update (Q4) November + December 2024"
+  }

@@ -30,15 +30,52 @@
     "team_size": null,
     "new_hires": ["Engineer (full-stack)", "Engineer (full-stack)"],
     "required_hires": null,
-    "operation_notes": "Doing remote paired coding sessions and enhanced bug rotation. Sales team has one dedicated sales person, founders also involved."
+    "operation_notes": "Culture: Remote paired coding, enhanced bug rotation; Sales: 1 dedicated sales person + founders doing sales"
   },
   "fundraising": [],
+  "companylowlight": [],
   "product_updates": [
     {
-      "description": "AI agent development for automating customer workflows and new CRM integration platform launches. Stripe subscription migration supported and numerous UX/UI upgrades.",
+      "description": "Developed AI Agent to automate critical customer workflows, including automated email follow-ups, natural language task execution, and system building; integrated with Slack and Teams.",
+      "event_type": "Launch",
+      "integrations": ["Slack", "Teams"],
+      "impact": "Expanded workflow automation for customers"
+    },
+    {
+      "description": "Launched comprehensive CRM integration platform to streamline quote-to-contract process, with real-time updates and handoffs between sales and billing teams. Integration includes Salesforce and HubSpot.",
+      "event_type": "Launch",
+      "integrations": ["Salesforce", "HubSpot"],
+      "impact": "Streamlined sales-to-billing workflow and improved automation"
+    },
+    {
+      "description": "Supported Stripe subscription migration for onboarding new customers.",
+      "event_type": "Integration",
+      "integrations": ["Stripe"],
+      "impact": "Reduced onboarding friction for new clients"
+    },
+    {
+      "description": "Launched a flexible contract amendment tool.",
+      "event_type": "Launch",
+      "integrations": null,
+      "impact": "Enabled easier customer contract adjustments"
+    },
+    {
+      "description": "Released a new revenue recognition engine matching standard accounting workflows.",
+      "event_type": "Launch",
+      "integrations": null,
+      "impact": "Aligned platform with accounting best practices, based on feedback from top firms"
+    },
+    {
+      "description": "Launched major UX/UI upgrades across key pages.",
       "event_type": "Upgrade",
-      "integrations": ["Slack", "Teams", "Salesforce", "HubSpot"],
-      "impact": "Platform stability increased, reducing churn. Largest customer is happy."
+      "integrations": null,
+      "impact": "Improved clarity, usability, and platform stability; reduced churn"
+    },
+    {
+      "description": "Achieved SOC 2 Type 2 Certification.",
+      "event_type": "Launch",
+      "integrations": null,
+      "impact": "Demonstrated security and compliance; successful external audit"
     }
   ],
   "events": [
@@ -47,12 +84,8 @@
       "description": "Hosted networking dinners for potential customers with a sponsor."
     },
     {
-      "event_type": "Award",
-      "description": "SOC 2 Type 2 Certification."
-    },
-    {
       "event_type": "Press",
-      "description": "Mentioned in CFO Tech Outlook, Forbes, Inc, CNET, and other outlets. Won Merit Awards and Turpentine."
+      "description": "Features in CFO Tech Outlook, Forbes, Inc, CNET; Merit Awards Winner; Turpentine podcast"
     }
   ],
   "notes": "Current focus on partnerships, sales funnel experiments, new marketing initiatives, enhancing engineering hiring. Using AI tools to enhance all employees’ work effectiveness.",

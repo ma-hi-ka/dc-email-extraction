@@ -7,7 +7,7 @@
     "financials": {
       "mrr": 0.0,
       "arr": null,
-      "revenue": 0.0,
+      "revenue": null,
       "burn_rate": 18300.0,
       "cash_on_hand": 1590000.0,
       "runway": 60,
@@ -22,7 +22,7 @@
     "sales": {
       "mom_revenue_growth": -1,
       "yoy_revenue_growth": null,
-      "backlog_revenue": null,
+      "backlog_revenue": 3000,
       "target_revenue": null
     },
     "team": {
@@ -31,6 +31,23 @@
       "required_hires": ["Engineer"],
       "operation_notes": "Hiring difficult—three paid engineering trials but still solo founder as of Feb 2025. Intention to hire another engineer remains."
     },
+    "company_lowlights": [
+      {
+        "description": "Lost all MRR this quarter; no recurring customers",
+        "impact": "Revenue dropped to $0 MRR",
+        "possible_causes": [
+          "No consistent customer usage",
+          "Customer (Mwamba) did not want a subscription"
+        ],
+        "future_changes": null
+      },
+      {
+        "description": "Hiring proving difficult; no great fits after three paid engineer trial periods",
+        "impact": "Team remains at one",
+        "possible_causes": ["Market for engineering talent", "High standards or mismatch"],
+        "future_changes": null
+      }
+    ],
     "fundraising": [
       {
         "round_type": "Seed",
@@ -45,19 +62,13 @@
         "description": "Launched new website iteration for exploration companies, including all core functionality and new file management.",
         "event_type": "Launch",
         "integrations": null,
-        "impact": "Brings exploration-focused features under a unified platform."
+        "impact": "Centralizes data flow and expands potential platform utility"
       },
       {
         "description": "Predictions for Copperman, including deep-tuned 1.5km deposit prediction and depth-wise optimization.",
         "event_type": "Upgrade",
         "integrations": null,
         "impact": "Customer considering $500K spend to test predicted target."
-      },
-      {
-        "description": "Coronado: Delivered formal proposal for annual pricing after successful recovery model (+75% improvement).",
-        "event_type": "Partnership",
-        "integrations": null,
-        "impact": "Potential annualized contract pending for 2025 with Coronado."
       },
       {
         "description": "Developed a unique data ingestion system for mining formats (Excel, CSV, PDF), reconstructing 3D data.",
@@ -74,7 +85,6 @@
         "description": "Coronado US Engineering Director requested and received a formal annual pricing proposal for executive review."
       }
     ],
-    "notes": "Revenue dropped to $0 MRR (from $10K in Dec) in Jan/Feb 2025. Coronado, Copperman, and Mwamba are reference customers; focus on onboarding 5–10 exploration companies on new platform. Product opportunity exists in unique data ingestion. Still only one FTE; hiring remains priority. $3K pending payment from Copperman. Prior months: Oct/Dec 2024 MRR was $10K. Recent SEED round was $1.5M+. Runway >5 years. Highly positive product feedback on modeling quality and ingestion capability.",
+    "notes": "Revenue dropped to $0 MRR after December 2024. $3K Copperman payment pending. Data ingestion system identified as unique. Still only one FTE; unsuccessful hiring attempts. Strong product feedback from customers.",
     "source": "Investor Update January + February 2025 + historical context"
   }
-  

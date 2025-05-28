@@ -7,9 +7,9 @@
     "financials": {
         "mrr": null,
         "arr": null,
-        "revenue": 96282.0,
-        "burn_rate": -51139.0,
-        "cash_on_hand": 2431664.0,
+        "revenue": 96282,
+        "burn_rate": 51139,
+        "cash_on_hand": 2431664,
         "runway": 47,
         "gross_margin": 56.46
     },
@@ -29,37 +29,55 @@
         "team_size": null,
         "new_hires": null,
         "required_hires": null,
-        "operation_notes": "Service was turned off for 4 days due to lack of capacity. High scrap rate impacted gross margin."
+        "operation_notes": null
     },
+    "company_lowlights": [
+        {
+          "description": "Service was turned off for 4 days due to lack of capacity.",
+          "impact": "Lost revenue and potential customer frustration.",
+          "possible_causes": [
+            "Lack of capacity",
+            "Order surges"
+          ],
+          "future_changes": "Need to improve process efficiency to handle order floods."
+        },
+        {
+          "description": "Scrap rate was high this month and impacted gross margin.",
+          "impact": "Lower profitability due to part failures and scrap.",
+          "possible_causes": [
+            "Process bottlenecks",
+            "Failures in inspection, QC, tooling"
+          ],
+          "future_changes": "Improve process areas that break down under high order volume."
+        }
+      ],
     "fundraising": [
         {
             "round_type": "Seed",
-            "amount_raised": 2575000.0,
-            "amount_remaining": 350000.0,
+            "amount_raised": 2575000,
+            "amount_remaining": 350000,
             "strategic_investors": null,
             "advisors": null
         }
     ],
     "product_updates": [
         {
-            "description": "Apple started piloting the reserved machine product and developed procurement automation integrations.",
-            "event_type": "Partnership",
+            "description": "Developed procurement automation integrations which was adopted in all their RFQ workflows.",
+            "event_type": "Integration",
             "integrations": ["Apple procurement automation"],
-            "impact": "Potential $120K annual contract per machine if pilot succeeds."
-        },
-        {
-            "description": "Became an official Google parts supplier; Google placed $14,421 in POs so far.",
-            "event_type": "Partnership",
-            "integrations": null,
-            "impact": "Potential pilot of reserved machine product with Google."
+            "impact": "Automation for Apple workflows; streamlined vendor ordering."
         }
     ],
     "events": [
         {
-            "event_type": "Service Outage",
-            "description": "Service was turned off for 4 days due to capacity limitations."
+            "event_type": "Partnership",
+            "description": "Became an official Google parts supplier; Google placed $14,421 in POs."
+        },
+        {
+            "event_type": "Pilot/Launch",
+            "description": "Apple started piloting the product. Potential $120K annual contract per machine if pilot succeeds"
         }
     ],
-    "notes": "Scrap rate was high this month, impacting gross margin. Bottleneck issues identified in product workflow. Company is seeking intros to Meta Reality Labs.",
-    "source": "April 2025 PDF Update"
+    "notes": "Apple's order value more than tripled during pilot. Demand surges are straining capacity and impacting both uptime and scrap rates.",
+    "source": "April 2025 Investor Update"
 }

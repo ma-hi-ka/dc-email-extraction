@@ -32,15 +32,21 @@
     "operation_notes": "No immediate hiring planned; headcount scaling deferred until milestones reached."
   },
   "fundraising": [],
+  "company_lowlights": [],
   "product_updates": [
     {
       "description": "Latest CXR model outperformed a 13-year veteran radiologist in 50% of cases and detected a missed life-threatening pneumothorax.",
       "event_type": "Upgrade",
       "integrations": null,
-      "impact": "Strongest signal yet for approaching human-level performance in chest x-rays."
+      "impact": "Strongest signal yet for approaching human-level performance; chest x-ray accuracy milestone."
     }
   ],
-  "events": [],
-  "notes": "Signed first customer (Hexarad). Close to signing Amerirad, Skyrad, Radiology of Huntsville, Radiology Associates of North Texas, and DocPanel. Compute covered for 10 months via credits. Potential PACS provider partnership may accelerate progress.",
+  "events": [ 
+    {
+      "event_type": "New Customer/Contract Signed",
+      "description": "Signed Hexarad radiology group as a customer."
+      }
+    ],
+  "notes": "Close to signing Amerirad, Skyrad, Radiology of Huntsville, Radiology Associates of North Texas, and DocPanel.Deploying models with a forward-deployed engineering approach and charging radiology practices a monthly subscription. Models are investigational pending FDA clearance. Compute spend for 10 months is covered by credits. Exploring a potential data partnership with a major PACS provider.",
   "source": "May 2025 Investor Update Email"
 }

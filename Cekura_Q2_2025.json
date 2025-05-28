@@ -15,12 +15,12 @@
     },
     "customers": {
       "active_customers": 68,
-      "churn_rate": 0.3,
+      "churn_rate": 3,
       "new_customers": 9,
       "usage_stats": "15% increase in active customers MoM. Most revenue from reputable tech startups. Pre-qualification effort shifted focus away from agencies. Recent customer additions: Truecaller, Skit, Cisco. Some startup churn in the last week."
     },
     "sales": {
-      "mom_revenue_growth": 0.085,
+      "mom_revenue_growth": 8.5,
       "yoy_revenue_growth": null,
       "backlog_revenue": null,
       "target_revenue": 35000.0
@@ -31,10 +31,37 @@
       "required_hires": null,
       "operation_notes": "Rebranding process due to trademark conflict. Ongoing enterprise pilots. Targeting enterprise conversion."
     },
+    "company_lowlights": [
+      {
+        "description": "Some startups churned in last week; churn rate is currently 30%",
+        "impact": "High loss of customers, negatively affecting growth and stability",
+        "possible_causes": ["Client fit issues", "Focus shift away from agencies"],
+        "future_changes": null
+      },
+      {
+        "description": "Mature UAE-based company copied the entire product including pricing after late stage discussions to buy their solution",
+        "impact": "Loss of proprietary advantage and potential market share",
+        "possible_causes": ["IP exposure during sales process"],
+        "future_changes": null
+      },
+      {
+        "description": "Rebranding to a new name due to trademark conflicts with Stryker",
+        "impact": "Brand identity disrupted; possible customer/market confusion",
+        "possible_causes": ["Trademark conflict"],
+        "future_changes": null
+      }
+    ],
     "fundraising": [],
-    "product_updates": [],
+    "product_updates": [
+      {
+        "description": "Onboarded new reputable clients: Truecaller, Skit, Cisco",
+        "event_type": "Partnership",
+        "integrations": null,
+        "impact": "Strengthens market credibility and drives revenue growth"
+      }
+    ],
     "events": [],
-    "notes": "Mature UAE competitor copied product after acquisition talks. Some startups churned recently. Rebranding required after trademark conflict with healthcare giant. Enterprises piloting, conversion slow. Goal: grow to $35k MRR, onboard an enterprise client.",
+    "notes": "Enterprises piloting, conversion slow. Future goal: onboard an enterprise client.",
     "source": "Investor Updates - April"
   }
   
