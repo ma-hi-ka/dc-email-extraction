@@ -10,46 +10,18 @@ class FinancialMetrics(BaseModel):
     cash_on_hand: Optional[float] = Field(None, description="Cash on Hand in USD")
     runway: Optional[float] = Field(None, description="Runway in Months")
     gross_margin: Optional[float] = Field(None, description="Gross Margin (%)")
-    #cogs: Optional[float] = Field(None, description="Cost Of Goods Sold in USD") --> 
-    #   would this be required? currently only 1 of the 16 company's have provided this data
-
-    @computed_field
-    def projected_arr(self) -> Optional[float]:
-        return self.mrr * 12 if self.mrr is not None else None
-    
-    @computed_field
-    def arr_gap(self) -> Optional[float]:
-        if self.arr is not None and self.projected_arr is not None:
-            return self.arr - self.projected_arr
-        return None
-    
-    @computed_field
-    def burn_multiple(self) -> Optional[float]:
-        if self.burn_rate is not None and self.revenue and self.revenue != 0:
-            return self.burn_rate / self.revenue
-        return None
-
-    @computed_field
-    def meets_arr_projection(self) -> Optional[bool]:
-        if self.arr is not None and self.projected_arr is not None:
-            return abs(self.arr - self.projected_arr) / self.projected_arr <= 0.1
-        return None
     
 class CustomerMetrics(BaseModel):
     active_customers: Optional[int] = Field(None, description="Number of Active Customers")
     churn_rate: Optional[float] = Field(None, description="Churn Rate (%)")
     new_customers: Optional[int] = Field(None, description="Number of New Customers")
     usage_stats: Optional[str] = Field(None, description="Usage Notes and Statistics–Product Feedback")
-    #customer_segmentation: Optional[str] --> i think can just leave out.
 
 class SalesMetrics(BaseModel):
     mom_revenue_growth: Optional[float] = Field(None, description="MoM Revenue Growth in USD")
     yoy_revenue_growth: Optional[float] = Field(None, description="YoY Revenue Growth in USD")
     backlog_revenue: Optional[float] = Field(None, description="Backlog Revenue in USD")
     target_revenue: Optional[float] = Field(None, description="Targeted Revenue Goal in USD")
-    #Signed vs. Potential Deals = Contract status with new customers.
-    #signed_deals: Optional[int] #purpose??
-    #potential_deals: Optional[int] #purpose??
 
 class TeamAndOpsMetrics(BaseModel):
     team_size: Optional[int] = Field(None, description="Current Team Size")
@@ -67,12 +39,12 @@ class ProductMilestone(BaseModel):
     impact: Optional[str] = Field(None, description="Qualitative impact summary")
 
 class CompanyLowLight(BaseModel):
-    description: str = Field(..., description="What went wrong or the challenge faced")
-    impact: str = Field(..., description="Qualitative summary of its impact")
+    description: str = Field(..., description="What Went Wrong/Challenge Faced")
+    impact: str = Field(..., description="Qualitative Summary Of Challenges' impact")
     possible_causes: Optional[List[str]] = Field([], 
-                                                 description="Potential root causes for this lowlight")
+                                                 description="Potential Causes For Lowlight")
     future_changes: Optional[str] = Field(None, 
-                                          description="Planned or recommended changes to address it")
+                                          description="Planned Changes To Address Challenge")
 
 
 class FundraisingRound(BaseModel):
@@ -106,7 +78,7 @@ class CompanySnapshot(BaseModel):
     events: Optional[List[CompanyEvent]] = Field([], 
                                                  description="Timeline of Major Company Events")
     
-    lowlights: Optional[List[CompanyLowLight]] = Field([], description="Challenges, setbacks, and negative events")
+    company_lowlights: Optional[List[CompanyLowLight]] = Field([], description="Challenges, setbacks, and negative events")
 
     notes: Optional[str] = Field(None, description="Additional Notes")
     source: Optional[str] = Field(None, description= "PDF or Email Source References")
